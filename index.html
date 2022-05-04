@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico"><script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
+  <body>
+    <a href="#" class="nav-burger desktop-hide"><span></span></a>
+    <div class="mobile-menu desktop-hide">
+      <a href="#" class="header__login">
+        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M13 5C13 6.65685 11.6569 8 10 8C8.34315 8 7 6.65685 7 5C7 3.34315 8.34315 2 10 2C11.6569 2 13 3.34315 13 5ZM15 5C15 7.76142 12.7614 10 10 10C7.23858 10 5 7.76142 5 5C5 2.23858 7.23858 0 10 0C12.7614 0 15 2.23858 15 5ZM2.25203 20C3.14012 16.5495 6.27232 14 10 14C13.7277 14 16.8599 16.5495 17.748 20H2.25203ZM10 12C14.8379 12 18.8734 15.4355 19.8 20C19.9311 20.6462 20 21.3151 20 22H18H2H0C0 21.3151 0.0688605 20.6462 0.200036 20C1.12658 15.4355 5.16208 12 10 12Z" fill="#222222"/>
+        </svg>
+        <span>Вход</span>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-menu__item"><a href="#">все о ножах</a></li>
+        <li class="nav-menu__item"><a href="#">рейтинги</a></li>
+        <li class="nav-menu__item"><a href="#">обзоры критика</a></li>
+        <li class="nav-menu__item"><a href="#">интервью</a></li>
+        <li class="nav-menu__item"><a href="#">бренды</a></li>
+        <li class="nav-menu__item"><a href="#">рубрики
+          <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L5 5L9 1" stroke="#FF9900" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a></li>
+      </ul>
+      <ul class="socials">
+        <li class="socials__item"><a href="#" class="socials__item">
+          <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.9636 11.7098C23.2192 10.817 22.3433 10.0551 21.5145 9.24598C20.7668 8.51668 20.7197 8.09361 21.3207 7.25188C21.9767 6.3332 22.6822 5.44976 23.3441 4.53523C23.962 3.68054 24.5936 2.82819 24.9188 1.80484C25.125 1.15379 24.9426 0.866216 24.275 0.752223C24.1599 0.732274 24.041 0.731238 23.9239 0.731238L19.9629 0.726575C19.4751 0.719321 19.2054 0.932021 19.0329 1.36442C18.8 1.94889 18.5598 2.53284 18.2823 3.09685C17.6528 4.37564 16.9496 5.61168 15.9639 6.65834C15.7465 6.88918 15.5061 7.1809 15.1429 7.06069C14.6884 6.89488 14.5545 6.14615 14.562 5.89304L14.5581 1.32115C14.47 0.668024 14.3252 0.376824 13.6768 0.249878L9.56215 0.250655C9.01291 0.250655 8.73751 0.462837 8.44424 0.806369C8.27507 1.00482 8.22403 1.13358 8.5717 1.19939C9.25463 1.32892 9.63935 1.7709 9.74143 2.45564C9.90516 3.54971 9.89376 4.64818 9.79946 5.74666C9.77174 6.06739 9.71655 6.38735 9.58935 6.68684C9.39038 7.15758 9.06913 7.25344 8.6471 6.96379C8.26496 6.70161 7.99656 6.33165 7.73386 5.96014C6.74705 4.5658 5.95972 3.06213 5.31773 1.48204C5.13224 1.02555 4.81228 0.748855 4.32859 0.741342C3.14021 0.722429 1.95158 0.71932 0.763208 0.742378C0.0481628 0.75585 -0.165055 1.10301 0.126144 1.75121C1.42048 4.63031 2.86119 7.42935 4.74181 9.97916C5.70738 11.2877 6.81596 12.443 8.24812 13.2616C9.87122 14.1896 11.6184 14.4689 13.4586 14.3829C14.3203 14.3425 14.5791 14.1184 14.619 13.2596C14.646 12.672 14.7125 12.0878 15.0024 11.5598C15.2869 11.0416 15.7177 10.9429 16.2144 11.2652C16.4628 11.4266 16.6722 11.6321 16.8699 11.8486C17.3548 12.3792 17.8225 12.9259 18.3258 13.4386C18.9572 14.0811 19.7052 14.4606 20.6456 14.3832L24.2861 14.3839C24.8727 14.3456 25.1768 13.6264 24.84 12.9717C24.6035 12.5132 24.2931 12.1049 23.9636 11.7098Z" fill="#D7D7D7"/>
+          </svg>
+        </a></li>
+        <li class="socials__item"><a href="#" class="socials__item">
+          <svg width="25" height="21" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.62611 4.28736C7.29478 4.09609 6.87012 4.32729 6.87012 4.70209V9.21002C6.87012 9.58675 7.29545 9.81473 7.62611 9.62539L11.5388 7.37465C11.8641 7.18725 11.8634 6.73259 11.5394 6.54454L7.62611 4.28736Z" fill="#D7D7D7"></path><mask id="path-2-outside-1" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="14" fill="black"><rect fill="white" width="18" height="14"></rect><path d="M14.2693 1.3338C11.1673 0.888734 6.834 0.888734 3.73067 1.3338C2.48933 1.51157 1.51133 2.45323 1.298 3.67571C0.900667 5.94484 0.900667 7.96792 1.298 10.2364C1.51133 11.4595 2.48933 12.4005 3.73067 12.5783C5.28533 12.8012 7.14667 12.9126 9.00733 12.9126C10.8647 12.9126 12.7213 12.8018 14.27 12.579C15.51 12.4012 16.4873 11.4602 16.702 10.2371C17.0993 7.96792 17.0993 5.94419 16.702 3.67507C16.4887 2.45323 15.5107 1.51157 14.2693 1.3338ZM15.716 10.076C15.574 10.885 14.934 11.5072 14.1227 11.6231C11.1107 12.0553 6.89733 12.0553 3.87733 11.6225C3.06533 11.5059 2.42467 10.8844 2.28333 10.0754C1.90067 7.88934 1.90067 6.02342 2.28333 3.83609C2.42533 3.02711 3.06533 2.40621 3.878 2.28898C5.386 2.07321 7.19333 1.96501 8.99933 1.96501C10.8067 1.96501 12.614 2.07321 14.122 2.28898C14.934 2.40556 15.5747 3.02711 15.716 3.83609C16.0987 6.02342 16.0987 7.88934 15.716 10.076Z"></path></mask><path d="M14.2693 1.3338C11.1673 0.888734 6.834 0.888734 3.73067 1.3338C2.48933 1.51157 1.51133 2.45323 1.298 3.67571C0.900667 5.94484 0.900667 7.96792 1.298 10.2364C1.51133 11.4595 2.48933 12.4005 3.73067 12.5783C5.28533 12.8012 7.14667 12.9126 9.00733 12.9126C10.8647 12.9126 12.7213 12.8018 14.27 12.579C15.51 12.4012 16.4873 11.4602 16.702 10.2371C17.0993 7.96792 17.0993 5.94419 16.702 3.67507C16.4887 2.45323 15.5107 1.51157 14.2693 1.3338ZM15.716 10.076C15.574 10.885 14.934 11.5072 14.1227 11.6231C11.1107 12.0553 6.89733 12.0553 3.87733 11.6225C3.06533 11.5059 2.42467 10.8844 2.28333 10.0754C1.90067 7.88934 1.90067 6.02342 2.28333 3.83609C2.42533 3.02711 3.06533 2.40621 3.878 2.28898C5.386 2.07321 7.19333 1.96501 8.99933 1.96501C10.8067 1.96501 12.614 2.07321 14.122 2.28898C14.934 2.40556 15.5747 3.02711 15.716 3.83609C16.0987 6.02342 16.0987 7.88934 15.716 10.076Z" fill="#D7D7D7"></path><path d="M14.2693 1.3338C11.1673 0.888734 6.834 0.888734 3.73067 1.3338C2.48933 1.51157 1.51133 2.45323 1.298 3.67571C0.900667 5.94484 0.900667 7.96792 1.298 10.2364C1.51133 11.4595 2.48933 12.4005 3.73067 12.5783C5.28533 12.8012 7.14667 12.9126 9.00733 12.9126C10.8647 12.9126 12.7213 12.8018 14.27 12.579C15.51 12.4012 16.4873 11.4602 16.702 10.2371C17.0993 7.96792 17.0993 5.94419 16.702 3.67507C16.4887 2.45323 15.5107 1.51157 14.2693 1.3338ZM15.716 10.076C15.574 10.885 14.934 11.5072 14.1227 11.6231C11.1107 12.0553 6.89733 12.0553 3.87733 11.6225C3.06533 11.5059 2.42467 10.8844 2.28333 10.0754C1.90067 7.88934 1.90067 6.02342 2.28333 3.83609C2.42533 3.02711 3.06533 2.40621 3.878 2.28898C5.386 2.07321 7.19333 1.96501 8.99933 1.96501C10.8067 1.96501 12.614 2.07321 14.122 2.28898C14.934 2.40556 15.5747 3.02711 15.716 3.83609C16.0987 6.02342 16.0987 7.88934 15.716 10.076Z" stroke="#D7D7D7" stroke-width="0.6" mask="url(#path-2-outside-1)"></path></svg>
+        </a></li>
+        <li class="socials__item"><a href="#" class="socials__item">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.4999 6.03931C9.0484 6.03931 6.25 8.74291 6.25 12.0775C6.25 15.4121 9.0484 18.1157 12.4999 18.1157C15.9514 18.1157 18.7498 15.4121 18.7498 12.0775C18.7498 8.74291 15.9514 6.03931 12.4999 6.03931ZM12.4999 15.8514C10.3468 15.8514 8.59372 14.1577 8.59372 12.0775C8.59372 9.99583 10.3468 8.30363 12.4999 8.30363C14.653 8.30363 16.4061 9.99583 16.4061 12.0775C16.4061 14.1577 14.653 15.8514 12.4999 15.8514Z" fill="#D7D7D7"/>
+          <path d="M19.2156 6.3917C19.6756 6.3917 20.0485 6.031 20.0485 5.58605C20.0485 5.1411 19.6756 4.7804 19.2156 4.7804C18.7557 4.7804 18.3828 5.1411 18.3828 5.58605C18.3828 6.031 18.7557 6.3917 19.2156 6.3917Z" fill="#D7D7D7"/>
+          <path d="M17.1872 0H7.81239C3.49839 0 0 3.37977 0 7.54751V16.6045C0 20.7722 3.49839 24.152 7.81239 24.152H17.1872C21.5012 24.152 24.9996 20.7722 24.9996 16.6045V7.54751C24.9996 3.37977 21.5012 0 17.1872 0ZM22.6559 16.6045C22.6559 19.5179 20.2028 21.8878 17.1872 21.8878H7.81239C4.7968 21.8878 2.34372 19.5179 2.34372 16.6045V7.54751C2.34372 4.63417 4.7968 2.26425 7.81239 2.26425H17.1872C20.2028 2.26425 22.6559 4.63417 22.6559 7.54751V16.6045Z" fill="#D7D7D7"/>
+          </svg>
+        </a></li>
+        <li class="socials__item"><a href="#" class="socials__item">
+          <svg width="13" height="25" viewBox="0 0 13 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.2186 4.15098H12.5009V0.176039C12.1071 0.121873 10.753 0 9.17591 0C5.88533 0 3.6312 2.06976 3.6312 5.87387V9.37486H0V13.8185H3.6312V24.9996H8.08321V13.8196H11.5675L12.1207 9.3759H8.08217V6.31449C8.08321 5.03013 8.42904 4.15098 10.2186 4.15098Z" fill="#D7D7D7"/>
+          </svg>
+        </a></li>
+      </ul>
+    </div>
+
+    <header>
+      <div class="container">
+        <div class="header">
+          <form action="#" class="header__search">
+            <input type="text" placeholder="Поиск...">
+            <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0428 13.8299C9.12585 15.7602 5.19638 14.9603 3.2661 12.0434C1.33582 9.1264 2.13568 5.19694 5.05264 3.26666C7.9696 1.33639 11.8991 2.13625 13.8293 5.05321C15.7596 7.97016 14.9598 11.8996 12.0428 13.8299ZM12.4298 15.9228C8.68714 17.8988 3.98306 16.7509 1.59822 13.1471C-0.941625 9.30896 0.110825 4.13862 3.94893 1.59878C7.78704 -0.941055 12.9574 0.111397 15.4972 3.9495C17.8184 7.45709 17.1392 12.0773 14.0756 14.7856L18.1678 20.9696C18.4726 21.4302 18.3463 22.0506 17.8857 22.3554C17.4251 22.6602 16.8047 22.5339 16.4999 22.0733L12.4298 15.9228Z" fill="#222222"/>
+            </svg>
+          </form>
+          <div class="header__title">
+            <h1>ножевая культура</h1>
+            <h2>Инфо-дайджест Rezat.ru</h2>
+          </div>
+          <a href="#" class="header__login">
+            <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13 5C13 6.65685 11.6569 8 10 8C8.34315 8 7 6.65685 7 5C7 3.34315 8.34315 2 10 2C11.6569 2 13 3.34315 13 5ZM15 5C15 7.76142 12.7614 10 10 10C7.23858 10 5 7.76142 5 5C5 2.23858 7.23858 0 10 0C12.7614 0 15 2.23858 15 5ZM2.25203 20C3.14012 16.5495 6.27232 14 10 14C13.7277 14 16.8599 16.5495 17.748 20H2.25203ZM10 12C14.8379 12 18.8734 15.4355 19.8 20C19.9311 20.6462 20 21.3151 20 22H18H2H0C0 21.3151 0.0688605 20.6462 0.200036 20C1.12658 15.4355 5.16208 12 10 12Z" fill="#222222"/>
+            </svg>
+            <span>Вход</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    
+    <nav class="light-block mobile-hide">
+      <div class="container">
+        <ul class="nav-menu">
+          <li class="nav-menu__item"><a href="#">все о ножах</a></li>
+          <li class="nav-menu__item"><a href="#">рейтинги</a></li>
+          <li class="nav-menu__item"><a href="#">обзоры критика</a></li>
+          <li class="nav-menu__item"><a href="#">интервью</a></li>
+          <li class="nav-menu__item"><a href="#">бренды</a></li>
+          <li class="nav-menu__item"><a href="#">рубрики
+            <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L5 5L9 1" stroke="#FF9900" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="light-block pb-60">
+      <div class="container">
+        <div class="slider-wrap">
+          <span class="slider-arrow slider-arrow_left">
+            <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.95703 17L9.96349 9L1.95703 1" stroke="#FF9900" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="slider-arrow slider-arrow_right">
+            <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.95703 17L9.96349 9L1.95703 1" stroke="#FF9900" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <div class="main-slider">
+            <div class="slide">
+              <img src="./images/content/slides/1.jpg" alt="" class="slide__photo">
+              <div class="slide__top-text">
+                <h2>Складной нож <br>N.L. Knives Фродо</h2>
+                <p>с клинком из мозаичного дамаска с рисунком "кожа дракона" от Берти Ритвельда и рукояткой из бивня мамонта</p>
+              </div>
+              <p class="slide__bottom-text">
+                Версия без клипсы
+              </p>
+            </div>
+
+            <div class="slide">
+              <img src="./images/content/slides/1.jpg" alt="" class="slide__photo">
+              <div class="slide__top-text"> 
+                <h2>Слайд два</h2>
+                <p>Слайд два Слайд два Слайд два Слайд два</p>
+              </div>
+              <p class="slide__bottom-text">
+                Слайд два
+              </p>
+            </div>
+
+            <div class="slide">
+              <img src="./images/content/slides/1.jpg" alt="" class="slide__photo">
+              <div class="slide__top-text">
+                <h2>Складной нож <br>N.L. Knives Фродо</h2>
+                <p>с клинком из мозаичного дамаска с рисунком "кожа дракона" от Берти Ритвельда и рукояткой из бивня мамонта</p>
+              </div>
+              <p class="slide__bottom-text">
+                Версия без клипсы
+              </p>
+            </div>
+
+            <div class="slide">
+              <img src="./images/content/slides/1.jpg" alt="" class="slide__photo">
+              <div class="slide__top-text"> 
+                <h2>Слайд два</h2>
+                <p>Слайд два Слайд два Слайд два Слайд два</p>
+              </div>
+              <p class="slide__bottom-text">
+                Слайд два
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="light-block pb-60">
+      <div class="container">
+        <div class="two-articles">
+          <div class="articles_two">
+            <div class="article article_big">
+              <img class="article__img" src="./images/content/article/1.jpg" alt="">
+              <div class="article-text">
+                <h2 class="article__title">
+                  <a href="#">Как выбрать свой первый нож на каждый день</a>
+                </h2>
+                <p class="article__text">
+                  Нож — один из первых инструментов человека, практически такой же древний, как палка-копалка или каменный топор. Каменный, деревянный, костяной, из вулканического стекла, позже бронзовый, стальной, керамический... нож был и остается верным спутником и помощником человека на протяжении всего его существования. 
+                </p>
+                <p class="article__views">
+                  <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 6C20 6 16.0751 12 10 12C3.92487 12 0 6 0 6C0 6 3.92487 0 10 0C16.0751 0 20 6 20 6Z" fill="#333333"/>
+                  <circle cx="10" cy="6" r="4" fill="#FFFDFD"/>
+                  <circle cx="10" cy="6" r="2" fill="#333333"/>
+                  </svg>
+                  <span class="views__count">
+                    <span>3,2</span>
+                    k
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="article article_mini">
+              <img class="article__img" src="./images/content/article/2.jpg" alt="">
+              <div class="article-text">
+                <h2 class="article__title">
+                  <a href="#">N.L. Knives – премиальные рабочие ножи и уникальные арт-предметы</a>
+                </h2>
+                <p class="article__text">
+                  Компания N.L. Knives была образована в 2016 году двумя талантливыми российскими ножевыми мастерами – Антоном Николаевым и Юрием Лукияновым. 
+                </p>
+                <p class="article__views">
+                  <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 6C20 6 16.0751 12 10 12C3.92487 12 0 6 0 6C0 6 3.92487 0 10 0C16.0751 0 20 6 20 6Z" fill="#333333"/>
+                  <circle cx="10" cy="6" r="4" fill="#FFFDFD"/>
+                  <circle cx="10" cy="6" r="2" fill="#333333"/>
+                  </svg>
+                  <span class="views__count">
+                    <span>1,5</span>
+                    k
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="aside-top">
+            <h2 class="aside-top__title">ТОП 5 премиальных складных ножей</h2>
+            <ul class="aside-top__list">
+              <li class="aside-top__item">
+                <span class="item-num">1</span>
+                <p class="item-text">«Мастерская братьев Широгоровых» Quantum – бестселлер 2020 года!</p>
+              </li>
+              <li class="aside-top__item">
+                <span class="item-num">2</span>
+                <p class="item-text">CultroTech Sirius – один из самых технологичных складных ножей на сегодня</p>
+              </li>
+              <li class="aside-top__item">
+                <span class="item-num">3</span>
+                <p class="item-text">Olamic Cutlery WhipperSnapper – эффектный маленький кастом: каждый нож уникален!</p>
+              </li>
+              <li class="aside-top__item">
+                <span class="item-num">4</span>
+                <p class="item-text">«Мастерская братьев Широгоровых» F3 NS – обновленный популярный флиппер, идеал геометрии!</p>
+              </li>
+              <li class="aside-top__item">
+                <span class="item-num">5</span>
+                <p class="item-text">Microtech Ultratech Bounty Hunter – культовый фронтальный автомат от Энтони Марфионе в кастомном исполнении</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <section class="dark-block pt-60 pb-60">
+      <div class="container">
+        <div class="knife-critic">
+          <h2 class="section__title">Обзоры ножевого критика</h2>
+          <div class="articles_three">
+            <div class="articles_three__mini">
+              <div class="article article_horizontal">
+                <img class="article__img" src="./images/content/article/critic-1.jpg" alt="">
+                <div class="article-text">
+                  <h2 class="article__title">
+                    <a href="#">Коллекционный авторский нож ручной работы Koji Hara "Integral Airstep Fighter"</a>
+                  </h2>
+                  <p class="article__text">
+                    Ценитель природы и творец ножей в этот раз создал потрясающий фиксед Integral Airstep Fighter в стиле ландшафта с японским террасным земледелием, видимого с высоты птичьего полета.
+                  </p>
+                  <p class="article__views">
+                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 6C20 6 16.0751 12 10 12C3.92487 12 0 6 0 6C0 6 3.92487 0 10 0C16.0751 0 20 6 20 6Z" fill="#333333"/>
+                    <circle cx="10" cy="6" r="4" fill="#FFFDFD"/>
+                    <circle cx="10" cy="6" r="2" fill="#333333"/>
+                    </svg>
+                    <span class="views__count">
+                      <span>1,5</span>
+                      k
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="article article_horizontal">
+                <img class="article__img" src="./images/content/article/critic-2.jpg" alt="">
+                <div class="article-text">
+                  <h2 class="article__title">
+                   <a href="#">Коллекционный складной нож Olamic Cutlery WhipperSnapper</a>
+                  </h2>
+                  <p class="article__text">
+                    Olamic Cutlery WhipperSnapper является в определенном смысле «ювелиркой» и произведением искусства и без сомнения относится к классу премиальных мужских аксессуаров.
+                  </p>
+                  <p class="article__views">
+                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 6C20 6 16.0751 12 10 12C3.92487 12 0 6 0 6C0 6 3.92487 0 10 0C16.0751 0 20 6 20 6Z" fill="#333333"/>
+                    <circle cx="10" cy="6" r="4" fill="#FFFDFD"/>
+                    <circle cx="10" cy="6" r="2" fill="#333333"/>
+                    </svg>
+                    <span class="views__count">
+                      <span>1,5</span>
+                      k
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="articles_three__big">
+              <div class="article">
+                <img class="article__img" src="./images/content/article/critic-3.jpg" alt="">
+                <div class="article-text">
+                  <h2 class="article__title">
+                    <a href="#">Авторский складной нож N. L. Knives Аурум «Корсар»</a>
+                  </h2>
+                  <p class="article__text">
+                    Все в этом ноже исполнено на высочайшем уровне — от технологических процессов и глубокого художественного понимания подобных работ, до «правильной» комплектации в точном соответствии с европейским и американским пониманием комплектации изысканного кастома.
+                  </p>
+                  <p class="article__views">
+                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 6C20 6 16.0751 12 10 12C3.92487 12 0 6 0 6C0 6 3.92487 0 10 0C16.0751 0 20 6 20 6Z" fill="#333333"/>
+                    <circle cx="10" cy="6" r="4" fill="#FFFDFD"/>
+                    <circle cx="10" cy="6" r="2" fill="#333333"/>
+                    </svg>
+                    <span class="views__count">
+                      <span>1,5</span>
+                      k
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section__btn">
+            <a href="#" class="btn">
+              Все обзоры ножевого критика
+              <span class="btn__arrow">
+                <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 9L5 5L1 1" stroke="#DEDEDE" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="light-block pt-60 pb-60">
+      <div class="container">
+        <h2 class="section__title">Ножевые рейтинги</h2>
+        <div class="articles_four pb-60">
+          <div class="article">
+            <img class="article__img" src="./images/content/knife-rating/1.jpg" alt="">
+            <div class="article-text">
+              <h2 class="article__title">
+                <a href="#">ТОП мужских аксессуаров 2020</a>
+              </h2>
+              <p class="article__date">
+                25 декабря 2020
+              </p>
+              <p class="article__views">
+                <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6C20 6 16.0751 12 10 12C3.92487 12 0 6 0 6C0 6 3.92487 0 10 0C16.0751 0 20 6 20 6Z" fill="#333333"/>
+                <circle cx="10" cy="6" r="4" fill="#FFFDFD"/>
+                <circle cx="10" cy="6" r="2" fill="#333333"/>
+                </svg>
+                <span class="views__count">
+                  <span>1,8</span>
+                  k
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="article">
+            <img class="article__img" src="./images/content/knife-rating/2.jpg" alt="">
+            <div class="article-text">
+              <h2 class="article__title">
+                <a href="#">ТОП 2020 перспективных складных ножей в ценовом сегменте до 20000 рублей</a>
+              </h2>
+              <p class="article__date">
+                23 декабря 2020
+              </p>
+              <p class="article__views">
+                <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6C20 6 16.0751 12 10 12C3.92487 12 0 6 0 6C0 6 3.92487 0 10 0C16.0751 0 20 6 20 6Z" fill="#333333"/>
+                <circle cx="10" cy="6" r="4" fill="#FFFDFD"/>
+                <circle cx="10" cy="6" r="2" fill="#333333"/>
+                </svg>
+                <span class="views__count">
+                  <span>1,2</span>
+                  k
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="article">
+            <img class="article__img" src="./images/content/knife-rating/3.jpg" alt="">
+            <div class="article-text">
+              <h2 class="article__title">
+                <a href="#">ТОП 2020 ножей с фиксированным клинком</a>
+              </h2>
+              <p class="article__date">
+                17 декабря 2020
+              </p>
+              <p class="article__views">
+                <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6C20 6 16.0751 12 10 12C3.92487 12 0 6 0 6C0 6 3.92487 0 10 0C16.0751 0 20 6 20 6Z" fill="#333333"/>
+                <circle cx="10" cy="6" r="4" fill="#FFFDFD"/>
+                <circle cx="10" cy="6" r="2" fill="#333333"/>
+                </svg>
+                <span class="views__count">
+                  <span>3,8</span>
+                  k
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="article">
+            <img class="article__img" src="./images/content/knife-rating/4.jpg" alt="">
+            <div class="article-text">
+              <h2 class="article__title">
+                <a href="#">Лучшие складные ножи 2019: майский рейтинг ножей класса Mid-Tech от Rezat.Ru</a>
+              </h2>
+              <p class="article__date">
+                10 декабря 2020
+              </p>
+              <p class="article__views">
+                <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6C20 6 16.0751 12 10 12C3.92487 12 0 6 0 6C0 6 3.92487 0 10 0C16.0751 0 20 6 20 6Z" fill="#333333"/>
+                <circle cx="10" cy="6" r="4" fill="#FFFDFD"/>
+                <circle cx="10" cy="6" r="2" fill="#333333"/>
+                </svg>
+                <span class="views__count">
+                  <span>1,3</span>
+                  k
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="section__btn">
+          <a href="#" class="btn">
+            Все ножевые рейтинги
+            <span class="btn__arrow">
+              <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 9L5 5L1 1" stroke="#DEDEDE" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-block pt-60 pb-180">
+      <div class="container">
+        <h2 class="section__title">Интервью с мастерами</h2>
+        <div class="articles_three">
+          <div class="articles_three__big">
+            <div class="article">
+              <img class="article__img" src="./images/content/interview/1.jpg" alt="">
+              <div class="article-text">
+                <h2 class="article__title">
+                  <a href="#">Беар Гриллс: «После Эвереста отцовство – это просто веселье!»</a>
+                </h2>
+                <p class="article__text">
+                  Беар Гриллс — пожалуй, один из самых известных в мире путешественников и уж точно самый известный и популярный специалист по выживанию в условиях дикой природы. Ему принадлежит целая серия невероятных достижений, среди которых и его детская мечта — покорение Эвереста (Беар Гриллс поднялся на вершину мира в возрасте 23 лет, став самым молодым британцем, которому удалось это совершить). 
+                </p>
+                <p class="article__views">
+                  <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 6C20 6 16.0751 12 10 12C3.92487 12 0 6 0 6C0 6 3.92487 0 10 0C16.0751 0 20 6 20 6Z" fill="#333333"/>
+                  <circle cx="10" cy="6" r="4" fill="#FFFDFD"/>
+                  <circle cx="10" cy="6" r="2" fill="#333333"/>
+                  </svg>
+                  <span class="views__count">
+                    <span>5,1</span>
+                    k
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="articles_three__mini">
+            <div class="article article_horizontal">
+              <img class="article__img" src="./images/content/interview/2.jpg" alt="">
+              <div class="article-text">
+                <h2 class="article__title">
+                  <a href="#">Эксклюзивное интервью с Дмитрием Стрельцовым</a>
+                </h2>
+                <p class="article__text">
+                  Сегодня у нас в гостях основатель компании Streltsov P&A, мастер, создающий уникальные по технологии обработки и красоте предметы из титана, и просто интересный человек — Дмитрий Стрельцов!
+                </p>
+                <p class="article__views">
+                  <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 6C20 6 16.0751 12 10 12C3.92487 12 0 6 0 6C0 6 3.92487 0 10 0C16.0751 0 20 6 20 6Z" fill="#333333"/>
+                  <circle cx="10" cy="6" r="4" fill="#FFFDFD"/>
+                  <circle cx="10" cy="6" r="2" fill="#333333"/>
+                  </svg>
+                  <span class="views__count">
+                    <span>1,5</span>
+                    k
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="article article_horizontal">
+              <img class="article__img" src="./images/content/interview/3.jpg" alt="">
+              <div class="article-text">
+                <h2 class="article__title">
+                  <a href="#">Эксклюзивное интервью с Сергеем Широгоровым</a>
+                </h2>
+                <p class="article__text">
+                  Сегодня мы подготовили для ценителей складных ножей премиального сегмента особый подарок: у нас в гостях Сергей Геннадиевич Широгоров, человек, не нуждающийся в особых представлениях для любителей ножей.
+                </p>
+                <p class="article__views">
+                  <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 6C20 6 16.0751 12 10 12C3.92487 12 0 6 0 6C0 6 3.92487 0 10 0C16.0751 0 20 6 20 6Z" fill="#333333"/>
+                  <circle cx="10" cy="6" r="4" fill="#FFFDFD"/>
+                  <circle cx="10" cy="6" r="2" fill="#333333"/>
+                  </svg>
+                  <span class="views__count">
+                    <span>2,5</span>
+                    k
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="section__btn">
+          <a href="#" class="btn">
+            Все интервью с мастерами
+            <span class="btn__arrow">
+              <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 9L5 5L1 1" stroke="#DEDEDE" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="light-block how-made_wrap">
+      <div class="how-made pt-60 pb-60">
+        <div class="container">
+          <h2 class="section__title">Как устроены ножи</h2>
+          <div class="articles_four">
+            <div class="article">
+              <img class="article__img" src="./images/content/how-made/1.jpg" alt="">
+              <div class="article-text">
+                <h2 class="article__title">
+                  <a href="#">Складные ножи с многопозиционным положением клинка</a>
+                </h2>
+                <p class="article__date">
+                  10 ноября 2020
+                </p>
+              </div>
+            </div>
+            <div class="article">
+              <img class="article__img" src="./images/content/how-made/2.jpg" alt="">
+              <div class="article-text">
+                <h2 class="article__title">
+                  <a href="#">Скримшоу в найфмейкинге</a>
+                </h2>
+                <p class="article__date">
+                  5 ноября 2020
+                </p>
+              </div>
+            </div>
+            <div class="article">
+              <img class="article__img" src="./images/content/how-made/3.jpg" alt="">
+              <div class="article-text">
+                <h2 class="article__title">
+                  <a href="#">Пуукко: традиционные финские ножи</a>
+                </h2>
+                <p class="article__date">
+                  26 октября 2020
+                </p>
+              </div>
+            </div>
+            <div class="article">
+              <img class="article__img" src="./images/content/how-made/4.jpg" alt="">
+              <div class="article-text">
+                <h2 class="article__title">
+                  <a href="#">BeaverKnife: ножи для кайфа</a>
+                </h2>
+                <p class="article__date">
+                  18 октября 2020
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="light-block pt-60 pb-60">
+      <div class="container">
+        <h2 class="section__title">Советы и рекомендации</h2>
+        <div class="two-articles pb-60">
+          <div class="aside-top">
+            <h2 class="aside-top__title">ТОП 5 советов от наших экспертов</h2>
+            <ul class="aside-top__list">
+              <li class="aside-top__item">
+                <span class="item-num">1</span>
+                <p class="item-text">Руслан Киясов: о кухонных ножах и посудомоечной машине</p>
+              </li>
+              <li class="aside-top__item">
+                <span class="item-num">2</span>
+                <p class="item-text">Гид по производителям заточных устройств от Rezat.Ru</p>
+              </li>
+              <li class="aside-top__item">
+                <span class="item-num">3</span>
+                <p class="item-text">Рекомендации по эксплуатации кухонных ножей</p>
+              </li>
+              <li class="aside-top__item">
+                <span class="item-num">4</span>
+                <p class="item-text">Ножи и закон: какие ножи легальны и не создадут вам проблем</p>
+              </li>
+              <li class="aside-top__item">
+                <span class="item-num">5</span>
+                <p class="item-text">Ножи для дайвинга и подводной охоты: виды, назначение, особенности использования</p>
+              </li>
+            </ul>
+          </div>
+          <div class="articles_two">
+            <div class="article article_mini">
+              <img class="article__img" src="./images/content/reco/1.jpg" alt="">
+              <div class="article-text">
+                <h2 class="article__title">
+                  <a href="#">Рыбацкие ножи: классификация и выбор оптимальной модели</a>
+                </h2>
+                <p class="article__text">
+                  Нож рыбака — каким он должен быть? Складным или нет, большим или маленьким? Какие характеристики для этого ножа наиболее важны? Наконец, как правильно выбрать рыбацкий нож? Давайте разберемся.
+                </p>
+                <p class="article__views">
+                  <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 6C20 6 16.0751 12 10 12C3.92487 12 0 6 0 6C0 6 3.92487 0 10 0C16.0751 0 20 6 20 6Z" fill="#333333"/>
+                  <circle cx="10" cy="6" r="4" fill="#FFFDFD"/>
+                  <circle cx="10" cy="6" r="2" fill="#333333"/>
+                  </svg>
+                  <span class="views__count">
+                    <span>0,8</span>
+                    k
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="article article_big">
+              <img class="article__img" src="./images/content/reco/2.jpg" alt="">
+              <div class="article-text">
+                <h2 class="article__title">
+                  <a href="#">Рекомендации по эксплуатации кухонных ножей</a>
+                </h2>
+                <p class="article__text">
+                  При правильной эксплуатации качественные кухонные ножи прослужат вам долгие годы. Несколько простых правил помогут вам уберечь любимые ножи от любых неприятностей.
+                </p>
+                <p class="article__views">
+                  <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 6C20 6 16.0751 12 10 12C3.92487 12 0 6 0 6C0 6 3.92487 0 10 0C16.0751 0 20 6 20 6Z" fill="#333333"/>
+                  <circle cx="10" cy="6" r="4" fill="#FFFDFD"/>
+                  <circle cx="10" cy="6" r="2" fill="#333333"/>
+                  </svg>
+                  <span class="views__count">
+                    <span>3,5</span>
+                    k
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section__btn">
+          <a href="#" class="btn">
+            Все советы и рекомендации
+            <span class="btn__arrow">
+              <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 9L5 5L1 1" stroke="#DEDEDE" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-block pt-60 pb-60">
+      <div class="container">
+        <h2 class="section__title">Видеобзоры</h2>
+        <div class="video-wrap pb-60">
+          <div class="video-block">
+            <div class="video">
+              <iframe width="1010" height="570" src="https://www.youtube.com/embed/x9qhWqi3Mk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h2 class="article__title">
+              <a href="#">Складные ножи Spyderco - ТОП 5 самых продаваемых за 10 лет</a>
+            </h2>
+            <p class="article__text">
+              Представляем ценителям ножей рейтинг ножей, за который на протяжении десяти лет клиенты Rezat.Ru голосовали рублем. В студии приглашенный гость и соведущий – мастер ножевой заточки, ножевой эксперт Руслан Киясов!
+            </p>
+            <p class="article__views">
+              <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 6C20 6 16.0751 12 10 12C3.92487 12 0 6 0 6C0 6 3.92487 0 10 0C16.0751 0 20 6 20 6Z" fill="#333333"/>
+              <circle cx="10" cy="6" r="4" fill="#FFFDFD"/>
+              <circle cx="10" cy="6" r="2" fill="#333333"/>
+              </svg>
+              <span class="views__count">
+                <span>7,8</span>
+                k
+              </span>
+            </p>
+          </div>
+          <div class="aside-top">
+            <h2 class="aside-top__title">популярные видеобзоры</h2>
+            <ul class="aside-top__list">
+              <li class="aside-top__item">
+                <span class="item-num">1</span>
+                <p class="item-text">Ножи Cold Steel - ТОП 5 самых продаваемых за 10 лет</p>
+              </li>
+              <li class="aside-top__item">
+                <span class="item-num">2</span>
+                <p class="item-text">Wuesthof - Рождение кухонного ножа из Золингена! </p>
+              </li>
+              <li class="aside-top__item">
+                <span class="item-num">3</span>
+                <p class="item-text">Лучшие складные ножи для города на каждый день</p>
+              </li>
+              <li class="aside-top__item">
+                <span class="item-num">4</span>
+                <p class="item-text">Россия — Чемпион! Сергей Федосенко о Чемпионате мира по метанию ножей и топоров</p>
+              </li>
+              <li class="aside-top__item">
+                <span class="item-num">5</span>
+                <p class="item-text">Складной нож Selkirk Survival от Buck Knives: для туристов, рыбаков, охотников</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="section__btn">
+          <a href="#" class="btn">
+            Все видеобзоры
+            <span class="btn__arrow">
+              <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 9L5 5L1 1" stroke="#DEDEDE" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-60 pb-60">
+      <div class="container">
+        <form action="#" class="subscribe">
+          <div class="subscribe-info">
+            <h2 class="subscribe__title">
+              Подписка на рассылку
+            </h2>
+            <p class="subscribe__text">
+              Каждую неделю мы собираем в рассылках то, о чем вы хотели узнать, но боялись спросить
+            </p>
+          </div>
+          <div class="subscribe-btns">
+            <input class="subscribe__email" type="email" placeholder="Ваш E-mail" required='required'>
+            <button class="btn subscribe__submit" type="submit">
+              подписаться
+              <span class="btn__arrow">
+                <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 9L5 5L1 1" stroke="#DEDEDE" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="subscribe__confirm">
+              <input type="checkbox" name="confirm" id="confirm" required='required' class="custom-checkbox">
+              <label for="confirm">
+                Я подтверждаю свое согласие с политикой конфиденциальности, политикой обработки персональных данных и получением рекламы.
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer-wrap pb-60">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer__title mobile-hide">
+            <h2>ножевая культура</h2>
+            <p>Инфо-дайджест Rezat.ru</p>
+          </div>
+          <div class="footer__nav">
+            <ul class="nav-menu">
+              <li class="nav-menu__item"><a href="#">все о ножах</a></li>
+              <li class="nav-menu__item"><a href="#">рейтинги</a></li>
+              <li class="nav-menu__item"><a href="#">обзоры критика</a></li>
+              <li class="nav-menu__item"><a href="#">интервью</a></li>
+              <li class="nav-menu__item"><a href="#">бренды</a></li>
+              <li class="nav-menu__item"><a href="#">рубрики
+                <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L5 5L9 1" stroke="#E5E5E5" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </a></li>
+            </ul>
+            <div class="footer__rules">
+              <a href="#">Правила использования сайта</a>
+              <a href="#">Пользовательское соглашение</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2021 Центральный ножевой магазин Rezat.Ru</p>
+          <p>Копирование материалов без разрешения владельца сайта и указания ссылки на источник информации запрещено</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  
+</html>
